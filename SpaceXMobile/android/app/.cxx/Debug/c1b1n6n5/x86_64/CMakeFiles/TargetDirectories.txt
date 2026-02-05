@@ -1,0 +1,6 @@
+C:/Users/essol/Documents/Cours L3/SpaceX/SpaceXMobile/android/app/.cxx/Debug/c1b1n6n5/x86_64/CMakeFiles/appmodules.dir
+C:/Users/essol/Documents/Cours L3/SpaceX/SpaceXMobile/android/app/.cxx/Debug/c1b1n6n5/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/essol/Documents/Cours L3/SpaceX/SpaceXMobile/android/app/.cxx/Debug/c1b1n6n5/x86_64/CMakeFiles/rebuild_cache.dir
+C:/Users/essol/Documents/Cours L3/SpaceX/SpaceXMobile/android/app/.cxx/Debug/c1b1n6n5/x86_64/safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir
+C:/Users/essol/Documents/Cours L3/SpaceX/SpaceXMobile/android/app/.cxx/Debug/c1b1n6n5/x86_64/safeareacontext_autolinked_build/CMakeFiles/edit_cache.dir
+C:/Users/essol/Documents/Cours L3/SpaceX/SpaceXMobile/android/app/.cxx/Debug/c1b1n6n5/x86_64/safeareacontext_autolinked_build/CMakeFiles/rebuild_cache.dir

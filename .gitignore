@@ -1,0 +1,89 @@
+# ==========================================
+# SYSTÈME & IDE
+# ==========================================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+.vscode/
+.idea/
+*.swp
+
+# ==========================================
+# BACKEND (Django / Python)
+# ==========================================
+# Environnements virtuels
+venv/
+.venv/
+env/
+ENV/
+bin/
+lib/
+include/
+share/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Base de données & Médias
+db.sqlite3
+db.sqlite3-journal
+media/
+static_root/
+
+# ==========================================
+# FRONTEND (React Native / Node)
+# ==========================================
+# Dépendances
+node_modules/
+
+# Android
+android/app/build/
+android/.gradle/
+android/build/
+android/local.properties
+android/*.keystore
+!android/debug.keystore
+android/*.bundle
+android/*.apk
+android/.cxx/
+
+# iOS
+ios/build/
+ios/Pods/
+ios/DerivedData/
+*.xcworkspace
+*.xcuserstate
+**/.xcode.env.local
+
+# Expo & Metro
+.expo/
+dist/
+web-build/
+*.jsbundle
+.metro-health-check*
+
+# ==========================================
+# CONFIGURATION & SÉCURITÉ
+# ==========================================
+# Fichiers d'environnement (Clés API, Secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# ==========================================
+# OUTILS (Fastlane, Yarn, etc.)
+# ==========================================
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+/coverage

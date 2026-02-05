@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Capsules SpaceX</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body { background-color: #f8f9fa; }
+        .table-container { background: white; border-radius: 10px; padding: 20px; shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="container mt-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h2 text-primary">Capsules SpaceX (Base Locale)</h1>
+        <a href="{% url 'capsule-add-web' %}" class="btn btn-success shadow-sm">
+            <i class="bi bi-plus-circle"></i> Ajouter une capsule
+        </a>
+    </div>
+
+    <div class="table-container shadow-sm">
+        <table class="table table-hover align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Série</th>
+                    <th>Type</th>
+                    <th>Statut</th>
+                    <th>Missions</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for capsule in capsules %}
+                <tr>
+                    <td class="fw-bold">{{ capsule.serial }}</td>
+                    <td>{{ capsule.type }}</td>
+                    <td>
+                        <span class="badge {% if capsule.status == 'active' %}bg-success{% elif capsule.status == 'retired' %}bg-secondary{% else %}bg-info text-dark{% endif %}">
+                            {{ capsule.status }}
+                        </span>
+                    </td>
+                    <td>{{ capsule.missions_data|length }}</td>
+                    <td class="text-center">
+                        <div class="btn-group" role="group">
+                            <a href="{% url 'capsule-detail-web' capsule.pk %}" class="btn btn-sm btn-outline-primary">Détails</a>
+                            <a href="{% url 'capsule-edit-web' capsule.pk %}" class="btn btn-sm btn-outline-warning">Modifier</a>
+                            <a href="{% url 'capsule-delete-web' capsule.pk %}" class="btn btn-sm btn-outline-danger">Supprimer</a>
+                        </div>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="5" class="text-center text-muted py-4">Aucune capsule trouvée. </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
