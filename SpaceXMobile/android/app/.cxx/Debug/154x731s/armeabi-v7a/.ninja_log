@@ -1,0 +1,27 @@
+# ninja log v5
+4	50	0	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/.cxx/Debug/154x731s/armeabi-v7a/CMakeFiles/cmake.verify_globs	f6bdd8d36a61dc72
+73	2818	7933724205456134	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/7247d5817e2dd5c687466ebfa7376eaf/safeareacontext/States.cpp.o	2b29b84cc9742239
+45	3516	7933724212357382	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/579e7e5999d0f25571a05db1a0b1a41e/EventEmitters.cpp.o	d2a5cd4542c8328a
+83	4291	7933724220135063	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/92d8dbcb1871baa1dd5936463424271c/safeareacontext-generated.cpp.o	af98a14a56adb954
+1	5010	7933724227325239	CMakeFiles/appmodules.dir/OnLoad.cpp.o	bc836f36e300b44a
+25	5018	7933724227430558	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/d05255146bdbdb0791310ada6e546f60/RNCSafeAreaViewState.cpp.o	b7cb10a6b3edef27
+100	5343	7933724230846469	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/579e7e5999d0f25571a05db1a0b1a41e/ShadowNodes.cpp.o	39e4efe97ddfc53b
+59	5704	7933724234166182	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/7247d5817e2dd5c687466ebfa7376eaf/safeareacontext/Props.cpp.o	9043c854f2a598d9
+35	6191	7933724239137916	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/579e7e5999d0f25571a05db1a0b1a41e/ComponentDescriptors.cpp.o	1752dd05fe9b0d1a
+17	6309	7933724240069564	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/d05255146bdbdb0791310ada6e546f60/RNCSafeAreaViewShadowNode.cpp.o	453568a472aaf6ad
+6310	6488	7933724242255934	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/build/intermediates/cxx/Debug/154x731s/obj/armeabi-v7a/libreact_codegen_safeareacontext.so	ca1ce2569eaf4082
+9	6791	7933724245065042	CMakeFiles/appmodules.dir/6abf74cda1f157c43bcfb1e40d2379c0/SpaceXMobile/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o	1d9e162e076b8302
+6791	6910	7933724246521385	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/build/intermediates/cxx/Debug/154x731s/obj/armeabi-v7a/libappmodules.so	1591aaf5e2992db9
+3	34	0	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/.cxx/Debug/154x731s/armeabi-v7a/CMakeFiles/cmake.verify_globs	f6bdd8d36a61dc72
+3	34	0	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/.cxx/Debug/154x731s/armeabi-v7a/CMakeFiles/cmake.verify_globs	f6bdd8d36a61dc72
+4	64	0	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/.cxx/Debug/154x731s/armeabi-v7a/CMakeFiles/cmake.verify_globs	f6bdd8d36a61dc72
+6	61	0	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/.cxx/Debug/154x731s/armeabi-v7a/CMakeFiles/cmake.verify_globs	f6bdd8d36a61dc72
+3	46	0	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/.cxx/Debug/154x731s/armeabi-v7a/CMakeFiles/cmake.verify_globs	f6bdd8d36a61dc72
+2	31	0	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/.cxx/Debug/154x731s/armeabi-v7a/CMakeFiles/cmake.verify_globs	f6bdd8d36a61dc72
+4	56	0	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/.cxx/Debug/154x731s/armeabi-v7a/CMakeFiles/cmake.verify_globs	f6bdd8d36a61dc72
+8	50	0	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/.cxx/Debug/154x731s/armeabi-v7a/CMakeFiles/cmake.verify_globs	f6bdd8d36a61dc72
+3	40	0	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/.cxx/Debug/154x731s/armeabi-v7a/CMakeFiles/cmake.verify_globs	f6bdd8d36a61dc72
+2	30	0	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/.cxx/Debug/154x731s/armeabi-v7a/CMakeFiles/cmake.verify_globs	f6bdd8d36a61dc72
+2	35	0	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/.cxx/Debug/154x731s/armeabi-v7a/CMakeFiles/cmake.verify_globs	f6bdd8d36a61dc72
+3	32	0	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/.cxx/Debug/154x731s/armeabi-v7a/CMakeFiles/cmake.verify_globs	f6bdd8d36a61dc72
+2	23	0	C:/Users/essol/Documents/CoursL3Sm6/ProjetSpaceX/SpaceXMobile/android/app/.cxx/Debug/154x731s/armeabi-v7a/CMakeFiles/cmake.verify_globs	f6bdd8d36a61dc72

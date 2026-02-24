@@ -5,14 +5,12 @@ from django.urls import reverse_lazy
 from rest_framework import viewsets, status
 from rest_framework.views import APIView
 from rest_framework.response import Response
-
+from rest_framework.decorators import action
 from .models import Capsule
 from .serializers import CapsuleSerializer
 from .utils import sync_spacex_capsules
 
-
 class CapsuleViewSet(viewsets.ModelViewSet):
-
     queryset = Capsule.objects.filter(is_locally_deleted=False)
     serializer_class = CapsuleSerializer
 
@@ -28,6 +26,11 @@ class CapsuleViewSet(viewsets.ModelViewSet):
         instance.is_locally_deleted = True
         instance.save()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+    @action(detail=False, methods=['get'])
+    def stats(self, request):
+        stats = Capsule.objects.filter(is_locally_deleted=False).values('type').annotate(total=Count('id'))
+        return Response(stats)    
 
 class CapsuleStatsView(APIView):
     def get(self, request):
@@ -53,13 +56,13 @@ class CapsuleDetailView(DetailView):
 
 class CapsuleCreateView(CreateView):
     model = Capsule
-    fields = ['status', 'serial', 'type', 'last_update'] 
+    fields = ['status', 'serial', 'type', 'last_update', 'missions_count'] 
     template_name = 'capsules/capsule_form.html'
     success_url = reverse_lazy('capsule_list') 
 
 class CapsuleUpdateView(UpdateView):
     model = Capsule
-    fields = ['status', 'serial', 'type', 'last_update'] 
+    fields = ['status', 'serial', 'type', 'last_update', 'missions_count'] 
     template_name = 'capsules/capsule_form.html'
     success_url = reverse_lazy('capsule_list')
 

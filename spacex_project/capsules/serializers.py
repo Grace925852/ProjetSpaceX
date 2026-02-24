@@ -1,16 +1,30 @@
 from rest_framework import serializers
 from .models import Capsule
+from rest_framework import viewsets
+
+class CapsuleViewSet(viewsets.ModelViewSet):
+    queryset = Capsule.objects.all()
+    
 
 class CapsuleSerializer(serializers.ModelSerializer):
-    mission_count = serializers.SerializerMethodField()
+    missions_count = serializers.SerializerMethodField()
     flight_types_count = serializers.SerializerMethodField()
+    
+    
 
     class Meta:
         model = Capsule
-        fields = ['id', 'spacex_id', 'serial', 'status', 'type', 'mission_count', 'flight_types_count', 'last_update', 'is_locally_deleted']
+        fields = [
+            'id', 'spacex_id', 'serial', 'status', 'type', 
+            'missions_count', 'flight_types_count', 
+            'last_update', 'is_locally_deleted'
+        ]
 
-    def get_mission_count(self, obj):
-        return len(obj.missions_data)
+
+    def get_missions_count(self, obj):
+        """Répond à l'exigence : Calcul du nombre total de missions """
+        return len(obj.missions_data) if obj.missions_data else 0
 
     def get_flight_types_count(self, obj):
-        return 1 if obj.type else 0
+        """Répond à l'exigence : Calcul du nombre de types de vols """
+        return 1 if obj.type and len(obj.missions_data) > 0 else 0
